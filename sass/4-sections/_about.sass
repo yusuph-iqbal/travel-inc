@@ -1,0 +1,41 @@
+.about
+  @media (min-width: 60rem)
+    background:
+      image: url('../img/rawpixel-com-236139.jpg')
+      size: cover
+      repeat: no-repeat
+      position: center
+    padding: 5em
+
+  .about-text-box
+    background-color: #111
+    padding: 4em
+    width: 100vw
+    //margin-left: -2.5%
+    outline: 2px solid #08B270
+    outline-offset: -2.5em
+    color: #fff
+    position: relative
+
+    @media (min-width: 60rem)
+      width: 40%
+
+    h1
+      color: #08B270
+      position: absolute
+      top: .75em
+      left: 50%
+      transform: translateX(-50%)
+      padding: 0 .145em
+      background-color: #111
+
+      @media (min-width: 25rem)
+        font-size: 2rem
+        top: .6em
+        padding: 0 .325em
+
+      @media (min-width: 60rem)
+        font-size: 1.5rem
+        top: .9em
+        padding: 0 .6em
+        transform: translateX()

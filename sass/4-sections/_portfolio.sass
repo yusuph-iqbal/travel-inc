@@ -1,0 +1,41 @@
+.portfolio
+  margin: 3em 0 0 0
+
+  figure
+    margin: 0
+
+  img
+    display: block
+
+  .portfolio-item
+    margin: 0
+    position: relative
+
+    @media (min-width: 37rem)
+      width: 50%
+      float: left
+
+    @media (min-width: 60rem)
+      width: 33.333%
+      overflow: hidden
+
+      &:hover > .portfolio-desc
+        transform: translateY(0%)
+
+
+    .portfolio-desc
+      position: absolute
+      z-index: 100
+      bottom: 0
+      left: 0
+      right: 0
+      color: #fff
+      background: rgba(0, 0, 0, .75)
+      padding-bottom: 1em
+
+
+      @media (min-width: 60rem)
+        transform: translateY(150%)
+
+      p
+        margin: 1em
